@@ -12,8 +12,9 @@
 2. [Objetivos](#objetivos)
 3. [Conteúdo Programático](#conteudo-programatico)
 4. [Competências e Habilidades](#competencias-habilidades)
-5. [Metodologia](#metodologia)
-6. [Referências Bibliográficas](#referencias-bibliograficas)
+5. [Estrutura do Projeto](#estrutura-do-projeto)
+6. [Algoritmo de Busca em Largura (BFS)](#algoritmo-bfs)
+7. [Referências Bibliográficas](#referencias-bibliograficas)
 
 ---
 
@@ -33,6 +34,7 @@ Esta disciplina tem como objetivo apresentar os conceitos básicos de Teoria dos
 - Definições fundamentais: vértices, arestas, caminhos e ciclos.
 - Grafos bipartidos, rotulados e valorados.
 - Grafos Eulerianos e Hamiltonianos.
+- **Algoritmo de Busca em Largura (BFS) e sua aplicação**.
 
 ### Unidade II - Representação de Grafos e Algoritmos de Caminho Mínimo (20h)
 - Representação por matriz de adjacência e lista de adjacência.
@@ -54,11 +56,42 @@ Esta disciplina tem como objetivo apresentar os conceitos básicos de Teoria dos
 - Implementar algoritmos de grafos e avaliar sua eficiência.
 - Aplicar a Teoria dos Grafos para resolver problemas práticos em computação.
 
-## 🏫 Metodologia <a id="metodologia"></a>
-- **Aulas expositivas e dialogadas** para introdução teórica.
-- **Atividades práticas** com implementação de algoritmos em grafos.
-- **Estudos de caso** aplicados a problemas computacionais reais.
-- **Avaliação** baseada em provas, trabalhos individuais e projetos em grupo.
+## 📂 Estrutura do Projeto <a id="estrutura-do-projeto"></a>
+A estrutura do projeto atual está organizada da seguinte forma:
+
+```
+Teoria_Dos_Grafos/
+│── README.md
+│── Algoritmo BFS/
+│   │── arvore_bfs.png
+│   │── BreadthFirstSearch.py
+│   │── caminho_mais_curto.png
+│   │── grafo_original.png
+```
+
+- **README.md**: Documento com informações gerais do projeto.
+- **Algoritmo BFS/**: Contém a implementação do algoritmo de busca em largura (BFS) e imagens geradas pelo código.
+
+## 🔍 Algoritmo de Busca em Largura (BFS) <a id="algoritmo-bfs"></a>
+O algoritmo de **Busca em Largura (BFS)** é um dos principais algoritmos para percorrer grafos, sendo utilizado para encontrar caminhos mínimos em grafos não ponderados.
+
+### 🔹 Funcionamento do BFS:
+1. Começa a partir de um nó inicial e o marca como visitado.
+2. Explora todos os seus vértices vizinhos antes de avançar para os próximos nós.
+3. Utiliza uma **fila** para garantir a exploração em camadas.
+4. Retorna uma **árvore de busca** e um **caminho mínimo** entre o nó inicial e um destino.
+
+### 🔹 Implementação em Python:
+O projeto inclui um código em Python que:
+- Representa um grafo por matriz de adjacência.
+- Utiliza a biblioteca `networkx` para visualização.
+- Implementa o BFS para gerar uma árvore de busca e encontrar o caminho mais curto.
+- Gera e salva imagens do grafo original, da árvore BFS e do caminho mais curto.
+
+### 🔹 Exemplos de Saída:
+- **grafo_original.png**: Representação visual do grafo antes da busca.
+- **arvore_bfs.png**: Exibe a árvore gerada pelo BFS.
+- **caminho_mais_curto.png**: Destaca o menor caminho encontrado pelo algoritmo.
 
 ## 📚 Referências Bibliográficas <a id="referencias-bibliograficas"></a>
 
@@ -73,4 +106,4 @@ Esta disciplina tem como objetivo apresentar os conceitos básicos de Teoria dos
 3. Bondy, J. A., Murty, U. S. R. *Graph Theory*. Springer, 2008.
 
 ---
-Este documento descreve a ementa, metodologia e objetivos da disciplina de Teoria dos Grafos, fornecendo um guia para os alunos acompanharem os tópicos abordados ao longo do curso.
+Este documento descreve a ementa, metodologia e objetivos da disciplina de Teoria dos Grafos, fornecendo um guia detalhado para os alunos acompanharem o curso e o projeto prático relacionado.
