@@ -1,0 +1,22 @@
+Suponha que uma rede social está tentando fazer um algoritmo de recomendação de amigos. Para que o algoritmo funcione eficientemente, 
+é necessário encontrar a menor distância entre duas pessoas, analisando se elas têm algum amigo em comum, aumentando as chances de se conhecerem.
+
+Dadas 6 pessoas (vértices) conforme a legenda:
+
+0 - Alfredo
+1 - Bruna
+2 - Carol
+3 - Daniel
+4 - Erick
+5 - Fernando
+
+E que o círculo social é dado por:
+
+Alfredo é amigo de Bruna e Carol
+Bruna é amiga de Alfredo, Daniel e Erick
+Carol é amiga de Alfredo e Erick
+Daniel é amigo Bruna, Erick e Fernando
+Erick é amigo de Bruna, Carol, Daniel e Fernando
+Fernando é amigo de Daniel e Erick
+
+Encontre qual a menor quantidade de pessoas entre Alfredo e Fernando.
